@@ -14,5 +14,5 @@ REM Uninstall agent via installer
 REM Disable services (brute force)
 net stop "Kaysea Agent"
 
-sc config "Kaysea Agent" start= disabled
+sc config "Kaysea Agent" start=disabled
 sc stop "Kaysea Agent"
