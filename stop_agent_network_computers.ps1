@@ -11,7 +11,7 @@ foreach($object in $computerlist ){
 
 $object.name
 $s = New-PSSession -ComputerName $object.name
-Invoke-Command -Session $s -ScriptBlock {Stop-Service -Name Kaysea Agent -Force} -AsJob
+Invoke-Command -Session $s -ScriptBlock {Stop-Service -Name 'Kaysea Agent' -Force} -AsJob
 
 }
 
