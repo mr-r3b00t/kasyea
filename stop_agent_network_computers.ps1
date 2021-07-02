@@ -26,4 +26,3 @@ $j | Format-List -Property *
 $results = $j | Receive-Job
 
 $results
-Get-PSSession | Remove-PSSession
